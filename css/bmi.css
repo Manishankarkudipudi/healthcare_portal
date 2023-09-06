@@ -1,0 +1,192 @@
+html, body {
+  height: 120%;
+  width: 100%;
+  background: rgba(207, 232, 242, 0.5);
+  font-family: Montserrat, sans-serif;
+  color: rgb(61, 65, 81);
+}
+/* Global Styles */
+* {
+box-sizing: border-box; 
+font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+background-color: #333;
+overflow: hidden;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+nav li {
+float: left;
+}
+
+nav a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+nav a:hover {
+background-color: #111;
+}
+
+.active {
+background-color: #4CAF50;
+}
+
+/* Main content */
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+h1 {
+text-align: center;
+}
+
+
+
+label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+input[type="radio"] {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#result {
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#bmi {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+#category {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+#comment {
+  font-size: 18px;
+  color: #333;
+}
+
+#link {
+  font-size: 14px;
+  color: #4CAF50;
+}
+
+@media screen and (max-width: 600px) {
+  nav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  nav ul {
+    margin-top: 10px;
+  }
+}
+
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+footer{
+  text-align: center ;
+  margin-top: 5%;
+}
+a{
+  color:red;
+}

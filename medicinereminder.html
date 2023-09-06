@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+   	<link rel="stylesheet" href="css/medicinereminder.css">
+</head>
+
+<body>
+	<nav>
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="bmi.html">BMI Calculator</a></li>
+		<li><a href="findadoctor.html">Find a Doctor</a></li>
+		<li><a href="appointment.html">Book a doctor appointment</a></li>
+		<li><a href="medicinereminder.html">Medicine Reminder</a></li>
+		<li><a href="Routine.html">Make a Routine List</a></li>
+    </ul>
+	</nav>
+	<main>
+	<h1>Medicine Reminder</h1>
+	<p>Please enter your medication information:</p>
+	<form id="reminder-form">
+		<label for="medicine-name">Medicine Name:</label>
+		<input type="text" id="medicine-name" name="medicine-name">
+		<span id= 'medicine-name-error' class="error-message"></span><br><br>
+		<label for="dosage">Dosage:</label>
+		<input type="number" id="dosage" name="dosage">
+		<span id = 'dosage-error'class="error-message"></span><br><br>
+		<label for="frequency">Frequency:</label>
+		<select id="frequency" name="frequency">
+			<option value="daily">Daily</option>
+			<option value="weekly">Weekly</option>
+			<option value="monthly">Monthly</option>
+		</select>
+		<span id = 'frequency-error' class="error-message"></span><br><br>
+		<label for="time">Time:</label>
+		<input type="time" id="time" name="time">
+		<span id = 'time-error' class="error-message"></span><br><br>
+		<div class="card-container">
+		  <div class="w3-card-4 w3-dark-grey" onclick="selectOption('before-dinner')">
+		    <div class="w3-container w3-center">
+		      <h3>Before dinner:</h3>
+		      <div class="image-wrapper">
+		        <img src="images/card_img.png" alt="Before dinner">
+		      </div>
+		    </div>
+		  </div>
+
+		  <div class="w3-card-4 w3-dark-grey" onclick="selectOption('after-dinner')">
+		    <div class="w3-container w3-center">
+		      <h3>After dinner:</h3>
+		      <div class="image-wrapper">
+		        <img src="images/card_img.png" alt="After dinner">
+		      </div>
+		    </div>
+		  </div>
+		</div>
+
+		<button type="button" onclick="setReminder()">Set Reminder</button>
+	</form>
+	</main>
+	<script src="scripts/medicinereminder.js"></script>
+	<footer>
+		<p>&copy; 2023 Health Hub. All rights reserved.</p>
+	</footer>
+</body>
+</html>
+
+

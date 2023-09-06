@@ -1,0 +1,185 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  background: rgba(207, 232, 242, 0.5);
+  font-family: Montserrat, sans-serif;
+  color: rgb(61, 65, 81);
+}
+/* Global Styles */
+* {
+box-sizing: border-box; 
+font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+background-color: #333;
+overflow: hidden;
+}
+
+nav ul {
+margin: 0;
+padding: 0;
+list-style-type: none;
+}
+
+nav li {
+float: left;
+}
+
+nav a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+nav a:hover {
+background-color: #111;
+}
+
+/* Main content */
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+h1 {
+text-align: center;
+}
+
+label {
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+select {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+  margin: 0 auto;
+}
+
+
+
+/* Table styles */
+table {
+  margin: 1rem 0;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+}
+
+#doctable {
+  display: none;
+}
+
+thead {
+  background-color: #333;
+  color: white;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav li:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.patient-name {
+  display: flex;
+  align-items: center;
+}
+
+.patient-number {
+  display: flex;
+  align-items: center;
+}
+
+
+/* Style the modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.modal h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+#results {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+
+#close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #007bff;
+}
+
+#close-modal:hover {
+  text-decoration: underline;
+}
+footer{
+  text-align: center ;
+  margin-top: 18%;
+}

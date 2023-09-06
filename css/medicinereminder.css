@@ -1,0 +1,146 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background: rgba(207, 232, 242, 0.5);
+    font-family: Montserrat, sans-serif;
+    color: rgb(61, 65, 81);
+  }
+  /* Global Styles */
+  * {
+  box-sizing: border-box; 
+  font-family: Arial, sans-serif;
+  }
+  
+  /* Navigation */
+  nav {
+  background-color: #333;
+  overflow: hidden;
+  }
+  
+  nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  }
+  
+  nav li {
+  float: left;
+  }
+  
+  nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+  
+  nav a:hover {
+  background-color: #111;
+  }
+  
+  /* Main content */
+  main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  }
+  
+  h1 {
+  text-align: center;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* CSS for input field boxes */
+  input[type="text"], input[type="number"], input[type="time"], select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+  }
+  
+  input[type="text"]:focus, input[type="number"]:focus, select:focus, input[type="time"]:focus {
+    outline: none;
+    border-bottom: 2px solid #4CAF50;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input,
+  select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .w3-card-4 {
+    max-width: 300px;
+    margin: 0 1rem;
+  }
+  
+  .w3-container {
+    padding: 1rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  
+  /* Adjust images in the image-wrapper div */
+  .image-wrapper img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .selected {
+    border: 2px solid red;
+  }
+  
+  
+  
+  button[type="button"] {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+  }
+  
+  button[type="button"]:hover {
+    background-color: #3e8e41;
+  }
+  footer{
+    text-align: center ;
+    /* margin-top: 10%; */
+  }  

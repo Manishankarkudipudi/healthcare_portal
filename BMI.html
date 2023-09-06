@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>BMI Calculator</title>
+	<link rel="stylesheet" href="css/bmi.css"> 
+</head>
+<body>
+	<nav>
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="BMI.html">BMI Calculator</a></li>
+		<li><a href="findadoctor.html">Find a Doctor</a></li>
+		<li><a href="appointment.html">Book a doctor appointment</a></li>
+		<li><a href="medicinereminder.html">Medicine Reminder</a></li>
+		<li><a href="Routine.html">Make a Routine List</a></li>
+    </ul>
+	</nav>
+	<main>
+		<h1>BMI Calculator</h1>
+		<!-- Weight input -->
+		<label for="weight">Enter your weight (lbs):</label>
+		<input type="number" id="weight" name="weight">
+
+		<!-- Height input -->
+		<label for="height">Enter your height (inches):</label>
+		<input type="number" id="height" name="height">
+
+		<!-- Height input -->
+		<label for="Age">Enter your Age (years):</label>
+		<input type="number" id="Age" name="Age">
+		
+		<!-- Gender radio buttons -->
+		<label>Gender:</label><br>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label><br>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label><br>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label><br>
+		
+		<!-- Unit checkbox -->
+		<label>Units:</label><br>
+		<input type="checkbox" id="metric" name="metric" value="metric">
+		<label for="metric">if Metric 	(kg, cm)</label>
+
+		<!-- Calculate button -->
+		<button onclick="calculateBMI()">Calculate BMI</button>
+
+		<!-- Result output -->
+		<div id="result" hidden>
+			<h2>Your BMI Result</h2>
+			<p>Your BMI is <span id="bmi"></span></p>
+			<p>You are in the <span id="category"></span> category</p>
+			<p><span id="comment"></span></p>
+			<p id="link"></p>
+		</div>
+	</main>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="scripts/BMI.js"></script>
+	<footer>
+		<p>&copy; 2023 Health Hub. All rights reserved.</p>
+	</footer> 
+</body>
+</html>

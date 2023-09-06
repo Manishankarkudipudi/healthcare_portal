@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+   	<link rel="stylesheet" href="css/appointment.css">
+
+</head>
+	<body>
+		
+			<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="bmi.html">BMI Calculator</a></li>
+				<li><a href="findadoctor.html">Find a Doctor</a></li>
+				<li><a href="appointment.html">Book a doctor appointment</a></li>
+				<li><a href="medicinereminder.html">Medicine Reminder</a></li>
+				<li><a href="Routine.html">Make a Routine List</a></li>
+			</ul>
+			</nav><br>
+			<h1>Book an Appointment</h1> 
+
+		<main>
+				<!-- table.html -->
+	<table id="doctable">
+		<thead>
+		  <tr>
+			<th>Doctor</th>
+			<th>Locality</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td>Abbott, Laura Lea</td>
+			<td>Waterford</td>
+		  </tr>
+		  <tr>
+			<td>Ahmed, Diana Rakhinshteyn</td>
+			<td>Brantford General Hospital</td>
+		  </tr>
+		  <tr>
+			<td>Akinbiyi, Tolulola Akindiran Amoo</td>
+			<td>Colborne Street</td>
+		  </tr>
+		</tbody>
+	  </table>
+			<label for="nameDropdown">Doctor:&nbsp;&nbsp;</label>
+			<select id="nameDropdown">
+				<option value="" disabled selected>Select a name</option>
+			</select><br><br>
+			<label for="locDropdown">Locality:</label>
+			<select id="locDropdown">
+				<option value="" disabled selected>Select locality</option>
+			</select><br><br>
+			<label for="datePicker">Select a date:</label>
+			<input type="date" id="datePicker">
+			<button id="nextButton">Go</button><br><br>
+			<div class="patient-name">
+				<label for="patientNameInput" id="patientNameLabel" style="display: none;">Patient Name:&nbsp;&nbsp;&nbsp;</label>
+				<input type="text" id="patientNameInput" style="display: none;">
+			</div><br>
+			<div class="patient-number">
+				<label for="patientNumbInput" id="patientNumbLabel" style="display: none;">Phone Number:</label>
+				<input type="text" id="patientNumbInput" style="display: none;">
+			</div><br><br>
+			<button id="bookApptBtn" style="display: none;">Book Appointment</button>
+			<div id = "message">
+				<div class="modal-overlay" id="modal-overlay">
+					<div class="modal" id="modal">
+						<ul id="results"></ul>
+						<button onclick="closeModal()">OK</button>
+					</div>
+				</div>	
+			</div>
+		</main>
+		<script src="scripts/appointment.js"></script>
+		<footer>
+			<p>&copy; 2023 Health Hub. All rights reserved.</p>
+		</footer> 
+	</body>
+</html>

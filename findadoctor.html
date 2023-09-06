@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+   	<link rel="stylesheet" href="css/findadoctor.css">
+</head>
+
+<body>
+	<nav>
+	<ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="bmi.html">BMI Calculator</a></li>
+		<li><a href="findadoctor.html">Find a Doctor</a></li>
+		<li><a href="appointment.html">Book a doctor appointment</a></li>
+		<li><a href="medicinereminder.html">Medicine Reminder</a></li>
+		<li><a href="Routine.html">Make a Routine List</a></li>
+    </ul>
+	</nav>
+	<main>
+		<h1>Find a family doctor in Ontario</h1> 
+		<h5>User need to opt for only one of the below options</h5>
+		<form id="search-form">
+			<div>
+				<label>
+					<input type = "radio" name="healthcare" id="healthconnect">Register with HealthCare Connect
+				</label>
+			</div>
+			<div>
+				<label>
+					<input type="radio" name="healthcare" id="docsearch">Doctor Search
+				</label>
+			</div>
+			<div>
+				<button type="submit" id="Find"> Search </button><br>
+			</div>
+			<div>
+				<a href= "https://www.ontario.ca/page/find-family-doctor-or-nurse-practitioner" target='_blank'>To know more about the process before proceding.</a>
+			</div>
+		</form> 
+		<div id = "message">
+			<div class="modal-overlay" id="modal-overlay">
+			<div class="modal" id="modal">
+				<h2>Search Results</h2>
+				<ul id="search-results"></ul>
+				<button id="close-modal">close</button>
+			</div>
+		</div>
+	</main>
+	<script src="scripts/findadoctor.js"></script>
+	<footer>
+		<p>&copy; 2023 Health Hub. All rights reserved.</p>
+	</footer> 
+</body>
+</html>
+
+
